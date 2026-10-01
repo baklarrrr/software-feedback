@@ -1,0 +1,79 @@
+{
+  "name": "Histogrammer: request a change",
+  "description": "Suggest an improvement to Histogrammer.",
+  "title": "[Histogrammer] ",
+  "labels": [
+    "enhancement",
+    "app:histogrammer"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "**This report and your GitHub username will be public.** Do not include personal or client information, credentials, private paths, or confidential files. Do not paste raw logs or attach unreviewed screenshots.\n\n[Search existing feedback](https://github.com/baklarrrr/software-feedback/issues) first. For suspected vulnerabilities, use [private security reporting](https://github.com/baklarrrr/software-feedback/security/advisories/new)."
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "task",
+      "attributes": {
+        "label": "What are you trying to do?",
+        "description": "Describe the task and who it helps. Use examples without personal or client information."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "difficulty",
+      "attributes": {
+        "label": "What makes it difficult now?",
+        "description": "Explain the current limitation, including any workaround."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "change",
+      "attributes": {
+        "label": "Suggested change",
+        "description": "Describe a possible improvement. Requests are considered without promising implementation."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Software version (if relevant)",
+        "description": "Use the version shown in the app or on its website. Do not include private file paths.",
+        "placeholder": "Version, or Not sure"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "safe-posting",
+      "attributes": {
+        "label": "Before posting",
+        "options": [
+          {
+            "label": "I searched existing feedback for this software.",
+            "required": true
+          },
+          {
+            "label": "I understand that this report and my GitHub username are public, and I removed personal data, credentials, private paths, and confidential material.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

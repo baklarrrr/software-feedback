@@ -1,0 +1,20 @@
+{
+  "blank_issues_enabled": false,
+  "contact_links": [
+    {
+      "name": "Browse existing feedback",
+      "url": "https://github.com/baklarrrr/software-feedback/issues",
+      "about": "Look for an existing report before opening a new one."
+    },
+    {
+      "name": "Report a security concern privately",
+      "url": "https://github.com/baklarrrr/software-feedback/security/advisories/new",
+      "about": "Use GitHub's private vulnerability reporting workflow. Never publish credentials or personal data."
+    },
+    {
+      "name": "Software and downloads",
+      "url": "https://bakar.ca/software/",
+      "about": "Find published software, release information, and application terms."
+    }
+  ]
+}

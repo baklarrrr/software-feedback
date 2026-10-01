@@ -1,0 +1,128 @@
+{
+  "name": "Timelapser: report a problem",
+  "description": "Report a reproducible problem with Timelapser.",
+  "title": "[Timelapser] ",
+  "labels": [
+    "bug",
+    "app:timelapser"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "**This report and your GitHub username will be public.** Do not include personal or client information, credentials, private paths, or confidential files. Do not paste raw logs or attach unreviewed screenshots.\n\n[Search existing feedback](https://github.com/baklarrrr/software-feedback/issues) first. For suspected vulnerabilities, use [private security reporting](https://github.com/baklarrrr/software-feedback/security/advisories/new)."
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Software version",
+        "description": "Use the version shown in the app or on its website. Write Not sure if you cannot find it.",
+        "placeholder": "Version, or Not sure"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "platform",
+      "attributes": {
+        "label": "Where does it happen?",
+        "description": "Choose the closest match. Do not include device identifiers.",
+        "options": [
+          "Windows",
+          "macOS",
+          "Linux",
+          "Android browser",
+          "iPhone / iPad browser",
+          "Other / not sure"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "browser",
+      "attributes": {
+        "label": "Browser (if relevant)",
+        "description": "Name and version only, for example Chrome. No account or device details.",
+        "placeholder": "Browser and version, or Not applicable"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "expected",
+      "attributes": {
+        "label": "What did you expect?",
+        "description": "Describe the intended result, using a neutral example."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "actual",
+      "attributes": {
+        "label": "What happened instead?",
+        "description": "Describe the problem. Omit raw logs, private filenames, paths, personal data, and client information."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Steps to reproduce",
+        "description": "Give the smallest steps someone can follow with their own data. Do not attach private projects.",
+        "placeholder": "1. Open the app\n2. ...\n3. Observe ..."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "frequency",
+      "attributes": {
+        "label": "How often?",
+        "description": "Choose the closest match.",
+        "options": [
+          "Every time",
+          "Sometimes",
+          "Once so far",
+          "Not sure"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "safe-posting",
+      "attributes": {
+        "label": "Before posting",
+        "options": [
+          {
+            "label": "I searched existing feedback for this software.",
+            "required": true
+          },
+          {
+            "label": "I understand that this report and my GitHub username are public, and I removed personal data, credentials, private paths, and confidential material.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}
